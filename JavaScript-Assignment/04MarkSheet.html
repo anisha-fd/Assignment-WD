@@ -13,7 +13,7 @@
         }
 
         .Box {
-            height: 550px;
+            height: 630px;
             width: 50%;
             border: 5px solid black;
             margin: 0 auto;
@@ -35,8 +35,8 @@
 
         input {
 
-            /* padding: 3px 90px; */
-            /* margin: 5px 12px; */
+            padding: 1px 30px;
+            margin: 5px 5px;
 
         }
 
@@ -44,7 +44,67 @@
             height: 35px;
             width: 20%;
             font-size: 20px;
-            margin-left: 320px;
+            margin-left: 257px;
+        }
+
+        #Clang {
+            margin-left: 75px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #C-lang {
+            margin-left: 50px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #database {
+            margin-left: 109px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #html {
+            margin-left: 133px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #css {
+            margin-left: 158px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #php {
+            margin-left: 167px;
+            height: 31px;
+            width: 50%;
+        }
+
+        #corejava {
+            margin-left: 107px;
+            height: 31px;
+            width: 50%;
+        }
+
+        .Text {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h3 {
+            font-weight: normal;
+            text-align: center;
+            display: flex;
+            padding: 30px 0;
+        }
+
+        #para-1,
+        #para-2 {
+            font-size: 18px;
+            color: blue;
         }
     </style>
 </head>
@@ -59,7 +119,7 @@
         <input type="text" id="Clang" placeholder="" value="">
         <br><br>
         <label name="value">2. C++ Language</label>
-        <input type="text" id="C++lang" placeholder="" value="">
+        <input type="text" id="C-lang" placeholder="" value="">
         <br><br>
         <label name="value">3. Database</label>
         <input type="text" id="database" placeholder="" value="">
@@ -78,10 +138,38 @@
         <br><br>
         <button id="btn" onclick="Result()">Result</button>
         <br><br>
-        <label class="total">Total is: <input type="text" placeholder="">/350</label>
-        <label  class="persontege">Percentag:<input type="text" placeholder=""></label>
+        <div class="Text">
+            <h3>Total is:&nbsp;<p id="para-1"></p>&nbsp; /350 </h3>
+            <h3>Percentag is:&nbsp;<p id="para-2"></p>&nbsp; %</h3>
+        </div>
+
+        <!-- <label id="total">Total is: <input type="text" placeholder="">/350</label> -->
+        <!-- <label  id="persontege">Percentag:<input type="text" placeholder=""></label> -->
 
     </div>
+
+
+    <script>
+        function Result() {
+            let a = document.getElementById('Clang').value;
+            let b = document.getElementById('C-lang').value;
+            let c = document.getElementById('database').value;
+            let d = document.getElementById('html').value;
+            let e = document.getElementById('css').value;
+            let f = document.getElementById('php').value;
+            let g = document.getElementById('corejava').value;
+            let total = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(e) + parseInt(f) + parseInt(g);
+            console.log(total);
+            document.getElementById('para-1').innerText = total;
+
+
+            total = total * 100 / 350
+            console.log(total);
+            document.getElementById("para-2").innerText = total.toFixed();
+        }
+
+
+    </script>
 
 </body>
 
@@ -101,128 +189,3 @@
 
 
 
-<!-- <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .Container {
-        width: 50%;
-        margin: 20px auto;
-        border: 4px solid black;
-        border-radius: 10px;
-        padding: 20px;
-    } -->
-
-    <!-- h1 {
-        padding: 40px 8px;
-        text-align: center;
-    }
-
-    p {
-        text-align: center;
-        padding-bottom: 16px;
-        font-size: 18px;
-    }
-
-    form {
-        padding: 0 40px;
-    }
-
-    label {
-        font-size: 18px;
-        display: inline-block;
-        width: 40%;
-    } -->
-
-    <!-- input {
-        padding: 3px 90px;
-        margin: 5px 12px;
-    }
-
-    button {
-        padding: 6px 30px;
-        font-size: 14px;
-        border: 1px solid black;
-        border-radius: 2px;
-        margin: 0 13px;
-    }
-
-    .Text {
-        display: flex;
-        justify-content: space-around;
-    } -->
-
-    <!-- h3 {
-        font-weight: normal;
-        text-align: center;
-        display: flex;
-        padding: 30px 0;
-    }
-
-    #para-1,
-    #para-2 {
-        font-size: 18px;
-        color: blue;
-    }
-</style>
-</head> -->
-
-<!-- <body>
-    <div class="Container">
-        <h1>Marksheet for Informational Technology</h1>
-        <p>Enter Marks</p>
-        <label for="Clanguage">1. C language :</label>
-        <input type="text" name="first" id="first">
-
-        <label for="C++language">2. C++ language :</label>
-        <input type="text" name="second" id="second">
-
-        <label for="Database">3. Database :</label>
-        <input type="text" name="third" id="third">
-
-        <label for="HTML">4. HTML :</label>
-        <input type="text" name="four" id="four">
-
-        <label for="CSS">5. CSS :</label>
-        <input type="text" name="five" id="five">
-
-        <label for="php">6. php :</label>
-        <input type="text" name="six" id="six">
-
-        <label for="CoreJava">7. Core Java :</label>
-        <input type="text" name="seven" id="seven">
-        <br>
-        <br>
-
-        <label for="btn"></label>
-        <button onclick="Result()">Result</button>
-
-        <div class="Text">
-            <h3>Total is :&nbsp;<p id="para-1"></p>&nbsp; / 350</h3>
-            <h3>Percentage is :&nbsp;<p id="para-2"></p>&nbsp; %</h3>
-        </div>
-    </div>
-    <script>
-        function Result() {
-            let a = document.getElementById('first').value;
-            let b = document.getElementById('second').value;
-            let c = document.getElementById('third').value;
-            let d = document.getElementById('four').value;
-            let e = document.getElementById('five').value;
-            let f = document.getElementById('six').value;
-            let g = document.getElementById('seven').value;
-            let total = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(e) + parseInt(f) + parseInt(g);
-            console.log(total);
-            document.getElementById("para-1").innerText = total;
-
-            total = total * 100 / 350
-            console.log(total);
-            document.getElementById("para-2").innerText = total.toFixed();
-        }
-    </script>
-</body>
-
-</html> -->
