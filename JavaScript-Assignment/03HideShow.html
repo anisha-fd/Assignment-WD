@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Button</title>
+    <style>
+       .passwd{
+        font-size: xx-large;
+       }
+       #myinput{
+        height: 40px;
+        width: 30%;
+        font-size: 20px;
+        
+       }
+       #chek{
+        height: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div class="pwd">
+        <label class="passwd">Enter Password :</label>
+        <input type="password" value=" " id="myinput">
+        <br>
+        <br>
+        <span>
+
+            <input type="checkbox" onclick="myfunction()" id="chek">Show Password
+        </span>
+    </div>
+
+    <script>
+        function myfunction(){
+            let a = document.getElementById("myinput");
+            if (a.type === "password") {
+                a.type = "text"
+            } else {
+                a.type = "password";
+            }
+        }
+            
+        
+    </script>
+</body>
+</html>
+

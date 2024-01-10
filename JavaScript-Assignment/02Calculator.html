@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Box{
+            align-items: center;
+            border: 5px solid black;
+            width: 50%;
+            height: 390px;
+            margin-left: 30%;
+        }
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+        label{
+            font-size: 30px;
+            margin-left: 25px;
+            
+        }
+        #first{
+            font-size: 25px;
+            margin-left: 9px;
+        }
+        #second{
+            font-size: 25px;
+        }
+        input{
+            height: 30px;
+            width: 50%;
+        }
+        button{
+            height: 40px;
+            width: 50px;
+            margin: 5px;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .value-1{
+            margin-left: 230px;
+            
+        }
+        #disply{
+            margin-left: 370px;
+            height: 50px;
+            width: 20%;
+            margin-top: -10px;
+            font-size: xx-large
+        }
+    </style>
+</head>
+<body>
+    <div class="Box">
+        <h1>Maths Operations</h1>
+        <br>
+        <label name="value">Enter 1st Number :</label>
+        <input type="text" id="first" placeholder="" value="">
+        <br><br>
+        <label name="value">Enter 2nd Number :</label>
+        <input type="text" id="second" placeholder="" value="">
+        <br><br>
+        <div class="btn">
+            <button onclick="addnumber()">+</button>
+            <button onclick="substractnumber()">-</button>
+            <button onclick="multyplynumber()">*</button><br>
+            <button  onclick="dividnumber()">/</button>
+            <button onclick="persontege()">%</button>
+        </div>
+        <div >
+            <label class="value-1">Answer is :</label>
+            <input id="disply" value="" style="border: none; ">
+        </div>
+    </div>
+
+
+    <script>
+
+        function addnumber()
+         {
+            let data1=parseInt(document.getElementById("first").value);
+            console.log(data1);
+            let data2=parseInt(document.getElementById("second").value);
+            console.log(data2);
+            let sum=data1+data2;
+            console.log(sum);
+            document.getElementById("disply").value = sum;
+            
+        }
+        function substractnumber()
+         {
+            let data1 =parseInt(document.getElementById("first").value);
+            console.log(data1);
+            let data2=parseInt(document.getElementById("second").value);
+            console.log(data2);
+            let subs=data1-data2;
+            console.log(subs);
+            document.getElementById("disply").value = subs;
+            
+        }
+
+        function multyplynumber()
+        {
+            let data1=parseInt(document.getElementById("first").value);
+            console.log(data1);
+            let data2=parseInt(document.getElementById("second").value);
+            console.log(data2);
+            let multy=data1*data2;
+            console.log(multy);
+            document.getElementById("disply").value = multy;
+
+        }
+        function dividnumber()
+        {
+            let data1=parseInt(document.getElementById("first").value);
+            console.log(data1);
+            let data2=parseInt(document.getElementById("second").value);
+            console.log(data2);
+            let divided=data1/data2;
+            console.log(divided);
+            document.getElementById("disply").value = divided;
+        }
+
+        function persontege()
+        {
+            let data1=parseInt(document.getElementById("first").value);
+            console.log(data1);
+            let data2=parseInt(document.getElementById("second").value);
+            console.log(data2);
+            let persenteg=data1%data2;
+            console.log(persenteg);
+            document.getElementById("disply").value = persenteg;
+        }
+    </script>
+    
+</body>
+</html>
