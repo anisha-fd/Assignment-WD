@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling in jQuery</title>
+</head>
+<body>
+    body
+    <div class="great-grand-parent">
+        great-grand-parent
+        <div class="great-grand-parent">
+            great-grand-parent
+            <div class="grand-parent">
+                grand-parent
+                <div class="parent">
+                    parent
+                    <div class="child">child</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script src="../JQuery-Assignment/JQ-link/jquery-3.7.1.min.js"></script>
+    <script>
+        $("*").css({
+            // textAlign:"center",
+            margin:"30px",
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".child").parent().css({border:"4px solid red"});
+            $(".parent").parent().css({border:"4px solid blue"});
+            $(".grand-parent").parent().css({border:"4px solid pink"});
+            $(".great-grand-parent").parent().css({border:"4px solid teal"});
+            $(".great-grand-parent").parent().css({border:"4px solid orange"});
+            
+
+        });
+    </script>
+
+    
+    
+</body>
+</html>
