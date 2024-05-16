@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 31 to 65 </title>
+</head>
+
+<body>
+    <h2>31 . Write a print 972 to 897 using for loop in JS? </h2>
+    <p>
+        <script>
+            for (let i = 897; i <= 972; i++) {
+                if (/[0125]/.test(i)) {
+                    continue;
+                } else {
+                    console.log(i)
+                }
+            }
+        </script>
+    </p>
+
+    <h2>32 . Write to print factorial of given number? </h2>
+    <p></p>
+
+    <h2>33.Write to print Fibonacci series up to given numbers? </h2>
+    <p>
+        <!-- <script>
+            let a = 10;
+            let b = 20;
+
+            for (let i = 1; i <= 5; i++) {
+                let c = a + b;
+                console.log(c);
+                a = b;
+                b = c;
+            }
+        </script> -->
+    </p>
+
+
+    <h2>34. Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS? </h2>
+    <p></p>
+
+    <h2>35.</h2>
+    <p></p>
+
+    <h2>36.</h2>
+    <p></p>
+
+    <h2>37.Use console.log() and escape characters to print the following pattern in JS?</h2>
+    <p>1) <br>
+
+        <script> 
+            for (let i = 1; i<=5; i++) {
+                // const element = array[i];
+                for (let j = 1; j <=1; j++) {
+                    // const element = array[j];
+                    document.write(j)
+                    document.write("<br>")
+                    document.write(i)
+                    document.write(j)
+                    document.write(i)
+                    document.write(i*2)
+    
+                    // document.write("<br>")
+                    // document.write("<br>")
+                    // document.write(j)
+                    
+                }
+                
+            }
+
+
+
+
+        </script>
+
+    </p>
+    <h2>38. Use pattern in console.log in JS? </h2>
+
+    <p>1) <br>
+
+    </p>
+
+    <p>2) <br>
+
+        <script>
+          
+            
+            </script>
+                    
+
+
+    <p> 3 )<br>
+        <script>
+
+            let count = 1;
+
+            for (let i = 1; i <= 5; i++) {
+                for (let d = 1; d <= i; d++) {
+                    document.write(count + " ");
+                    count++;
+                }
+                document.write("<br>");
+            }
+
+        </script>
+    </p>
+
+    <p>4) <br><br>
+        <script>
+
+
+            for (let i = 0; i <= 4; i++) {
+                for (let D = 0; D < i; D++) {
+                    document.write(" * ")
+                }
+                document.write("*")
+                document.write("<br>")
+            }
+        </script>
+    </p>
+
+
+
+    <h2>39. Accept 3 numbers from user using while loop and check each numbers palindrome? </h2>
+    <p></p>
+
+    <h2>40.0 Write a JavaScript Program to display the current day and time in the following format.
+        Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ? </h2>
+    <p>
+        <script>
+            let date = new Date();
+            let days = ['Sunday', 'Monday', 'Tuseday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday'];
+
+            let dat = date.getDay();
+            let time = date.getHours();
+
+
+            console.log(`Today is ${days[dat]}.Current time is ${time > 12 ? time - 12 : time} ${time >= 12 ? 'PM' : 'AM'}`);
+        </script>
+    </p>
+
+    <h2>41. Write a JavaScript program to get the current date? </h2>
+    <p>
+        <script>
+            let date_2 = new Date().toDateString();
+            console.log(date_2);
+        </script>
+    </p>
+
+    <h2>42.Write a JavaScript program to compare two objects? </h2>
+    <p>
+        <script>
+            // Example of different reference 
+            const obj1 = { a: 1, b: 2 };
+            const obj2 = { a: 1, b: 2 };
+            console.log(obj1 === obj2);
+
+            // Example of same reference 
+            const obj3 = { a: 1, b: 2 };
+            const obj4 = obj3;
+            console.log(obj3 === obj4); 
+        </script>
+    </p>
+
+    <h2>43.Write a JavaScript program to convert an array of objects into CSV string?  </h2>
+    <p>
+        <script>
+
+            let array =["Anisha",'25','React js'];
+            let csv = array.join();
+            console.log(csv);
+        </script>
+    </p>
+
+    <h2>44.Write a JavaScript program to capitalize first letter of a string?  </h2>
+    <p>
+        <script>
+            function capitalize (){
+                let string = "goodmorning";
+                console.log(string[0].toUpperCase()+ string.slice(1));
+            }
+            capitalize();
+        </script>
+    </p>
+
+    <h2>45. Write a JavaScript program to determine if a variable is array?</h2>
+
+
+
+
+</body>
+
+</html>
