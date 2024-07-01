@@ -11,12 +11,15 @@
     <h2>31 . Write a print 972 to 897 using for loop in JS? </h2>
     <p>
         <script>
-            for (let i = 897; i <= 972; i++) {
-                if (/[0125]/.test(i)) {
-                    continue;
-                } else {
-                    console.log(i)
-                }
+            // for (let i = 897; i <= 972; i++) {
+            //     if (/[0125]/.test(i)) {
+            //         continue;
+            //     } else {
+            //         console.log(i)
+            //     }
+            // }
+            for (let i = 972; i >= 897; i--) {
+                console.log(i);
             }
         </script>
     </p>
@@ -52,25 +55,43 @@
     <h2>37.Use console.log() and escape characters to print the following pattern in JS?</h2>
     <p>1) <br>
 
-        <script> 
-            for (let i = 1; i<=5; i++) {
-                // const element = array[i];
-                for (let j = 1; j <=1; j++) {
-                    // const element = array[j];
-                    document.write(j)
-                    document.write("<br>")
-                    document.write(i)
-                    document.write(j)
-                    document.write(i)
-                    document.write(i*2)
-    
-                    // document.write("<br>")
-                    // document.write("<br>")
-                    // document.write(j)
-                    
-                }
-                
+        <script>
+            // for (let i = 1; i <= 5; i++) {
+            //     // const element = array[i];
+            //     for (let j = 1; j <= 1; j++) {
+            //         // const element = array[j];
+            //         document.write(j)
+            //         document.write("<br>")
+            //         document.write(i)
+            //         document.write(j)
+            //         document.write(i)
+            //         document.write(i * 2)
+
+            //         // document.write("<br>")
+            //         // document.write("<br>")
+            //         // document.write(j)
+
+            //     }
+
+            // }
+
+            for (let i = 1; i <= 5; i++) {
+                document.write(i + '1' + i + i * i + i * i * i);
+                document.write("<br>")
             }
+            document.write("<br>")
+
+            
+            // for (let i =1; i <= 5; i++){
+                
+            //     document.write(i +'1' + i + i * i + i * i * i )
+                
+            //      document.write("<br>")
+                 
+                 
+                
+            // }
+            
 
 
 
@@ -82,15 +103,32 @@
 
     <p>1) <br>
 
+        <script>
+
+           let num = 65;
+           for (let row=1; row<=5; row++){
+            for(let col=1; col<= row; col++){
+                document.write(String.fromCharCode(num.toString()));
+                num++
+            }
+            document.write("<br>")
+           }
+           
+        </script>
+
     </p>
 
     <p>2) <br>
 
         <script>
-          
-            
-            </script>
-                    
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write(j % 2 === 0 ? '0 ' : '1 ');
+                }
+                document.write('<br>');
+            }
+        </script>
+
 
 
     <p> 3 )<br>
@@ -166,22 +204,22 @@
         </script>
     </p>
 
-    <h2>43.Write a JavaScript program to convert an array of objects into CSV string?  </h2>
+    <h2>43.Write a JavaScript program to convert an array of objects into CSV string? </h2>
     <p>
         <script>
 
-            let array =["Anisha",'25','React js'];
+            let array = ["Anisha", '25', 'React js'];
             let csv = array.join();
             console.log(csv);
         </script>
     </p>
 
-    <h2>44.Write a JavaScript program to capitalize first letter of a string?  </h2>
+    <h2>44.Write a JavaScript program to capitalize first letter of a string? </h2>
     <p>
         <script>
-            function capitalize (){
+            function capitalize() {
                 let string = "goodmorning";
-                console.log(string[0].toUpperCase()+ string.slice(1));
+                console.log(string[0].toUpperCase() + string.slice(1));
             }
             capitalize();
         </script>
