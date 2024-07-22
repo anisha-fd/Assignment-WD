@@ -3,6 +3,7 @@ import React from 'react'
 export default function Que_Ans() {
     return (
         <div>
+
             <h2>1 .What is React js ?</h2>
             <p><b>Ans: React js is libreary of javascript and use to create a single page application and non refreseble application .</b></p>
 
@@ -50,6 +51,7 @@ export default function Que_Ans() {
                 Hook is a special function and with hooks we can manipulation in component.
                 And it is return array. Where the first is default value and the second is changing method with we can change the value of usestate.
                 For ex. let [count,Setcount]=usestate(0);</b></p>
+
         </div>
     )
 }

@@ -22,15 +22,39 @@ export default function IncrementDecrement() {
         setnumber(0);
 
     }
+
+    const mystyle = {
+        backgroundColor: "blue",
+        color:"white",
+        margin:"10px 10px",
+        padding:"10px",
+        borderRadius:"10px",
+        maxWidht:"150px",
+ 
+    },
+    btn = {
+        backgroundColor: "black",
+        color:"white",
+        margin:"10px 10px",
+        padding:"10px",
+        borderRadius:"10px",
+        maxWidht:"150px",
+        marginLeft:"80px",
+    },
+    num = {
+        marginLeft:"100px",
+    }
   return (
     <div>
+    <div>
         <h2>React Web</h2>
-        <h1>{number}</h1>
-        <button onClick={handelDecrement}  >Decrement</button>
-        <button onClick={handelIncrement}>Increment</button>
+        <h1 style={num}>{number}</h1>
+        <button onClick={handelDecrement} style={mystyle} >Decrement</button>
+        <button onClick={handelIncrement} style={mystyle}>Increment</button>
         <br />
-        <button onClick={handelReset}>Reset</button>
+        <button onClick={handelReset} style={btn}>Reset</button>
       
+    </div>
     </div>
   )
 }
