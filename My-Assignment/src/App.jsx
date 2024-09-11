@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css';
 
 import CreateList from './MODULE_9/CreateList'
 import IncrementDecrement from './MODULE_9/IncrementDecrement'
@@ -12,6 +13,10 @@ import Footer2 from './MODULE_9/Login&Logout/Footer2'
 import List_Hooks from './Component_State_Props/List_Hooks'
 import Todo_List from './MODULE_9/Todo_List'
 import MouseEvent from './MODULE_9/MouseEvent'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
+import StyleMUI from './MODULE-11/Practical/StyleMUI';
+import Crud from './MODULE-11/Practical/Curd';
 
 
 
@@ -34,11 +39,17 @@ export default function App() {
       <Private/>
       <Footer2/> 
 
-      {/* <List_Hooks/> */}
+      <List_Hooks/>
 
-      {/* {<Todo_List/> } */}
+      {<Todo_List/> } */}
 
-      <MouseEvent/>
+      {/* <MouseEvent/> */}
+
+      {/* <Header/> */}
+
+      {/* <StyleMUI/> */}
+      
+      <Crud/>
        
       
 
