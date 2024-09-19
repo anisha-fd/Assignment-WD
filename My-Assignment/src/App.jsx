@@ -17,6 +17,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import StyleMUI from './MODULE-11/Practical/StyleMUI';
 import Crud from './MODULE-11/Practical/Curd';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Home from './JSON-SERVER-Crud/Home';
+import Adduser from './JSON-SERVER-Crud/Adduser';
+import View from './JSON-SERVER-Crud/View';
+import Edit from './JSON-SERVER-Crud/Edit';
 
 
 
@@ -25,12 +30,33 @@ import Crud from './MODULE-11/Practical/Curd';
 export default function App() {
   return (
     <div>
+
+      <div className='crud'>
+        <BrowserRouter>
+          <Link to='/'>Home Page</Link>
+          <Routes>
+            <Route path='/' element={<Home />} ></Route>
+            <Route path='/add' element={<Adduser />}></Route>
+            <Route path='/view/:viewId' element={<View />}></Route>
+            <Route path='/edit/:editId' element={<Edit />}></Route>
+          </Routes>
+        </BrowserRouter>
+        
+
+      </div>
+
+
+
+
+
+
+
       {/* <Que_Ans/> */}
 
       {/* <CreateList/> */}
       {/* <IncrementDecrement/> */}
-       {/* <HelloWorld/> */}
-       
+      {/* <HelloWorld/> */}
+
 
       {/* <Login/>
       <PublicView/>
@@ -48,10 +74,10 @@ export default function App() {
       {/* <Header/> */}
 
       {/* <StyleMUI/> */}
-      
-      <Crud/>
-       
-      
+
+      {/* <Crud/> */}
+
+
 
     </div>
   )

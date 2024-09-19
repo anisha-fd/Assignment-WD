@@ -41,13 +41,13 @@ export default function StyleMUI() {
           <Box sx={{display : 'flex',border : '1px solid black', color : 'black',width : '30%',height : '40px', textAlign : 'center', alignContent:'center'}}>
             <Typography sx={{padding : '7px 10px'}}>All Categori</Typography>
             <Box sx={{display : 'flex',justifyContent : 'space-between',width:'71%',paddingLeft : '20px',margin :'7px 0px'}}>
-            <Typography>Search...</Typography>
+            <Typography><input type='text' placeholder='Search...'  style={{border:"none" }}/></Typography>
             <Typography><SearchIcon /></Typography>
             </Box>
           </Box>
           <Box>
-          <FormControl sx={{ m: 1, minWidth: 150 }} size="small">
-          <InputLabel id="demo-select-small-label">Your Location</InputLabel>
+          <FormControl sx={{ m: 1, minWidth: 170 }} size="small">
+          <InputLabel id="demo-select-small-label" >Your Location</InputLabel>
           <Select
             labelId="demo-select-small-label"
             id="demo-select-small"
@@ -64,7 +64,7 @@ export default function StyleMUI() {
               <Typography sx={{paddingLeft : '10px'}}>Compare</Typography>
             </IconButton>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit" sx={{color : 'black'}}>
-              <Badge badgeContent={0} showZero color="success">
+              <Badge badgeContent={7} showZero color="success">
                 <FavoriteBorderOutlinedIcon />
               </Badge>
               <Typography sx={{paddingLeft : '10px'}}>Whislist</Typography>

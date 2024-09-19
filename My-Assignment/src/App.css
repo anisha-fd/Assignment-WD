@@ -2,8 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 body{
   font-family: 'Roboto',sans-serif;
   cursor: pointer;
+}
+
+/* --------------------------------------------crud----------------- */
+.crud{
+   align-items: center;
+   background-color: skyblue;
+
 }
