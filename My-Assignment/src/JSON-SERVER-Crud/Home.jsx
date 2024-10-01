@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
 function Home() {
+
+    // npm i rect-router-dom
+    //npm i json-server
+    //npm 
     const [students, setStudents] = useState(null);
     const nav = useNavigate()
 

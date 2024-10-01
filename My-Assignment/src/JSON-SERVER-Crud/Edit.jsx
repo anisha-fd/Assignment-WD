@@ -10,6 +10,9 @@ function Edit() {
     console.log(editId);
 
 
+    
+
+
     useEffect(()=>{
         fetch(`http://localhost:3000/students/${editId}`)
         .then((res)=>{return res.json()})

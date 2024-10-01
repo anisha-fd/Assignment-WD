@@ -1,0 +1,17 @@
+{
+    "user" :[
+        {
+            "name":"Anisha",
+            "email":"a@gmail.com",
+            "contact":"283878942",
+            "id":"1"
+        },
+        {
+            "name":"Dhawal",
+            "email":"d@gmail.com",
+            "contact":"283878942",
+            "id":"2"
+        }
+    ]
+}
+

@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  background: skyblue;
+
 }
 body{
   font-family: 'Roboto',sans-serif;
@@ -14,4 +16,16 @@ body{
    align-items: center;
    background-color: skyblue;
 
+}
+/* -------------------------REDUX-COUNTER------------------- */
+.counter{
+  padding: 100px;
+}
+.counter button{
+  margin: 10px;
+  width: 10%;
+  height: 40px;
+  background-color: white;
+  font-size: 20px;
+  
 }

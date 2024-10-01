@@ -15,23 +15,38 @@ import Todo_List from './MODULE_9/Todo_List'
 import MouseEvent from './MODULE_9/MouseEvent'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
-import StyleMUI from './MODULE-11/Practical/StyleMUI';
-import Crud from './MODULE-11/Practical/Curd';
+
+
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './JSON-SERVER-Crud/Home';
 import Adduser from './JSON-SERVER-Crud/Adduser';
 import View from './JSON-SERVER-Crud/View';
 import Edit from './JSON-SERVER-Crud/Edit';
+import { useSelector } from 'react-redux';
+import CrudHome from './Redux-Apply/Crud-Redux/CrudHome';
+import RAdduser from './Redux-Apply/Crud-Redux/RAdduser';
+import REdit from './Redux-Apply/Crud-Redux/REdit';
 
 
 
 
 
 export default function App() {
+
+  const x = useSelector(state=>state.usersData)
+
+  // const a = useSelector(state=>state.xyz)
   return (
     <div>
+      {/* <h1>Hello redux {a}</h1> */}
 
-      <div className='crud'>
+      {/* <ReduxHome/> */}
+
+
+
+      
+
+       {/* <div className='crud'>
         <BrowserRouter>
           <Link to='/'>Home Page</Link>
           <Routes>
@@ -43,7 +58,7 @@ export default function App() {
         </BrowserRouter>
         
 
-      </div>
+      </div>  */}
 
 
 
@@ -77,6 +92,19 @@ export default function App() {
 
       {/* <Crud/> */}
 
+
+      {/* -----------------REDUX -CRUD-------------------- */}
+
+       <BrowserRouter>
+      <Link to='/'>Home</Link>
+      <Routes>
+        <Route path='/' element={<CrudHome/>}></Route>
+        <Route path='/add' element={<RAdduser/>}></Route>
+        <Route path='/edit:editID' element={<REdit/>}></Route>
+      </Routes>
+      </BrowserRouter> 
+      
+      
 
 
     </div>
